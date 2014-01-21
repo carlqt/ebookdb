@@ -14,6 +14,7 @@
                       book_path(book),
                       :method => :delete,
                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      remote: true,
                       :class => 'btn btn-mini btn-danger' %>
         </td>
       </tr>

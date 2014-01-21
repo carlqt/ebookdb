@@ -74,9 +74,11 @@ class BooksController < ApplicationController
   def destroy
     @book = Book.find(params[:id])
     @book.destroy
+    @books = Book.all
 
     respond_to do |format|
       format.html { redirect_to books_url }
+      format.js
       format.json { head :no_content }
     end
   end

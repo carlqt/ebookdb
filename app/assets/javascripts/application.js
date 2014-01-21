@@ -19,4 +19,11 @@ $(document).ready(function(){
 	$('.btn.menu-right').on("click", function() {
 		alert("I don't have a function yet");
 	});
+
+	$('#select_all').on("change", function(){
+		$("input[id=book_").prop("checked", this.checked);
+
+	});
+
+
 });
