@@ -1,5 +1,7 @@
 Ebookdb::Application.routes.draw do
   devise_for :users
+  resources :books
+
 
   root :to => 'ebook#index'
   get "ebook/index"
