@@ -52,7 +52,7 @@ group :development, :test do
   gem 'annotate'
 end
 
-gem 'devise'
+gem 'devise', '~> 2.2.3'
 gem 'puma'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

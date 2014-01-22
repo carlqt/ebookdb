@@ -14,4 +14,5 @@
 
 class Book < ActiveRecord::Base
   attr_accessible :author, :description, :genre, :related_series, :title
+  has_many :lists
 end
