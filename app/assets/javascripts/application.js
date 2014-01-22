@@ -21,7 +21,7 @@ $(document).ready(function(){
 	});
 
 	$('#select_all').on("change", function(){
-		$("input[id=book_").prop("checked", this.checked);
+		$("input[id=book_]").prop("checked", this.checked);
 
 	});
 
