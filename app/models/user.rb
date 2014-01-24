@@ -33,6 +33,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :username
   # attr_accessible :title, :body
   has_many :lists
+  has_many :books, through: :lists
 
   validates :username, presence: true, uniqueness: { case_sensitive: false }
   
