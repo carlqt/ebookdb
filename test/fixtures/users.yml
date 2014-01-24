@@ -19,6 +19,7 @@
 #  location               :string(255)
 #  gender                 :string(255)
 #  birthday               :string(255)
+#  is_admin               :boolean
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html

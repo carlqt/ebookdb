@@ -19,6 +19,7 @@
 #  location               :string(255)
 #  gender                 :string(255)
 #  birthday               :string(255)
+#  is_admin               :boolean
 #
 
 class User < ActiveRecord::Base
