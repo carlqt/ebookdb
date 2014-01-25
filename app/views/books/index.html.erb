@@ -5,13 +5,17 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= if current_user.is_admin then check_box_tag("select_all")end %></th>
+      <% if current_user.present? %>
+        <th><%= if current_user.is_admin then check_box_tag("select_all")end %></th>
+      <% end %>
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:author) %></th>
       <th><%= model_class.human_attribute_name(:genre) %></th>
       <th><%= model_class.human_attribute_name(:description) %></th>
       <th><%= model_class.human_attribute_name(:related_series) %></th>
+      <% if current_user.present? %>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
+      <% end %>
     </tr>
   </thead>
   <tbody class="index">
