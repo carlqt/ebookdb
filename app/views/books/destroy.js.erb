@@ -1,1 +1,7 @@
+var parent_tr = $("#<%=j @id %>").parent().parent();
+
+parent_tr.fadeOut('slow', function(){ 
+	
 $('.index').html("<%=j render 'books/showbooks' %>");
+
+});
