@@ -16,4 +16,12 @@ class List < ActiveRecord::Base
   attr_accessible :book_id, :chapter, :page, :title, :user_id
   belongs_to :user
   belongs_to :book
+
+  after_initialize :init
+
+  def init
+  	self.page = 1
+  	self.chapter = 1
+  end
+
 end

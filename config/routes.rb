@@ -3,9 +3,10 @@ Ebookdb::Application.routes.draw do
   resources :books
 
 
+
   root :to => 'ebook#index'
   get "ebook/index"
-
+  post "list/create"
   
 
   # The priority is based upon order of creation:

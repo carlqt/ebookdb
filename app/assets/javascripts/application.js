@@ -27,3 +27,17 @@ $(document).ready(function(){
 
 
 });
+
+	function ajax_function(id) {
+
+		list = $('#list_' + id).val();
+
+		$.ajax({
+			type: "POST",
+			url: "list/create",
+			dataType: "html",
+			data: { book_id : id, list_title : list }
+			
+		});
+
+	};
