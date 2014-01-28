@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 		$.ajax({
 			type: "POST",
-			url: "list/create",
+			url: "lists/create",
 			dataType: "html",
 			data: { book_id : id, list_title : list }
 			
