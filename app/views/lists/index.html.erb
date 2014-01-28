@@ -20,7 +20,7 @@
       <tr>
         <td><%= link_to list.id, list_path(list) %></td>
         <td><%= list.user_id %></td>
-        <td><%= list.book_id %></td>
+        <td><%= Book.find(list.book_id).title %></td>
         <td><%= list.title %></td>
         <td><%= list.chapter %></td>
         <td><%= list.page %></td>
