@@ -30,6 +30,8 @@ class List < ActiveRecord::Base
 
   	if data_list.present?
   		data_list.update_attributes(:title => title)
+  	elsif title.nil?
+  		data_list.destroy
   	else
   		List.create(:user_id => user_id, :book_id => book_id, :title => title)
 			# list.save
