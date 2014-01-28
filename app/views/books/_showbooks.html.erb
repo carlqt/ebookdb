@@ -18,7 +18,7 @@
                       remote: true,
                       :class => 'btn btn-mini btn-danger' %>
           <% else %>
-            <%= select_tag "lists", options_for_select(["Reading", "Wish", "Complete", "Ignore"]), prompt: "Put this on list...", :onchange => "ajax_function(#{book.id});", :id => "list_#{book.id}" %>
+            <%= select_tag "lists", options_for_select(["Reading", "Wish", "Complete", "Ignore"], find_list_title(book.id)), prompt: "Put this on list...", :onchange => "ajax_function(#{book.id});", :id => "list_#{book.id}" %>
           <% end %>
         </td>
       </tr>
