@@ -24,4 +24,17 @@ class List < ActiveRecord::Base
   	self.chapter = 1
   end
 
+  def self.add_update_list(user_id, book_id, title)
+  	user = User.find(user_id)
+  	data_list = user.lists.where(:book_id => book_id).first
+
+  	if data_list.present?
+  		data_list.update_attributes(:title => title)
+  	else
+  		List.create(:user_id => user_id, :book_id => book_id, :title => title)
+			# list.save
+
+  	end
+  end
+
 end
