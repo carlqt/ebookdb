@@ -75,6 +75,7 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
     @book.destroy
     @books = Book.all
+    @id = "row_#{params[:id]}"
 
     respond_to do |format|
       format.html { redirect_to books_url }
