@@ -144,6 +144,7 @@ GEM
     net-ssh (2.7.0)
     nokogiri (1.5.11)
     orm_adapter (0.5.0)
+    pg (0.17.1)
     polyglot (0.3.3)
     pry (0.9.12.4)
       coderay (~> 1.0)
@@ -249,6 +250,7 @@ DEPENDENCIES
   letter_opener (~> 1.1.0)
   meta_request (~> 0.2.2)
   mini_magick (~> 3.4)
+  pg
   pry-debugger (~> 0.2.2)
   pry-rails (~> 0.2.2)
   puma
