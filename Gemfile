@@ -46,7 +46,9 @@ group :development, :test do
   gem "meta_request", "~> 0.2.2"  # Chrome RailsPanel extension
   gem "em-websocket", "~> 0.5.0"
   gem "guard-livereload", "~> 1.1.3"
-  gem "terminal-notifier-guard", "~> 1.5.3"
+  gem 'capybara'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
   #gem "rb-inotify" # Used by Guard on linux dev machines
   # gem "jasminerice", :git => 'https://github.com/bradphelan/jasminerice.git'
   gem 'annotate'
